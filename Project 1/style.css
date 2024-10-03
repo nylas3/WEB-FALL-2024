@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ff0000;
+    color: rgb(246, 222, 3);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: "Edu AU VIC WA NT Dots", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header span {
+    font-family: "Edu AU VIC WA NT Dots", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: "Edu AU VIC WA NT Dots", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 25px;
+    padding: 10px;
+    font-weight: 1000;
+}
+
+header nav ul li a:hover {
+    background-color: rgb(246, 222, 3);
+    border-radius: 5px;
+}
+
+
+.summary-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.summary-section h2 {
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "BLED" 0,
+        "SCAN" 0,
+        "XELA" 0,
+        "YELA" 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.summary-section p {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: bold ;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.flex-area {
+    display: flex;                    
+    justify-content: center;          
+    align-items: flex-start;          
+    padding: 50px;
+}
+
+.book-cover {
+    width: 500px;                     
+    height: 600px;                    
+    overflow: hidden;                 
+    margin: 0 20px;                  
+    display: flex;                   
+    justify-content: center;        
+    align-items: center;            
+}
+
+.book-cover img {
+    width: 100%;                      
+    height: auto;                     
+    min-height: 100%;                
+    object-fit: cover;               
+}
+
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 10px;
+    padding: 20px;
+}
+
+.parent div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    background-color: #ff0000;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.parent h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    min-height: 60px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent p {
+    font-size: 22px;
+    margin: 0;
+    line-height: 1.4;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.parent div {
+    min-height: 150px;
+    height: auto;
+}
+
+.jokes-title {
+    font-family: 'Sixtyfour Convergence', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+body {
+background-image: url(Images/bananas.png); /* Image from:  https://www.toptal.com/designers/subtlepatterns/tag/yellow/ */
+}
