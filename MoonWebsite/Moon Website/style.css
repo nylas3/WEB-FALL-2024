@@ -1,0 +1,614 @@
+/**/
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*Border box so tht padding is included in height and width measurements*/
+}
+#opener
+{
+width: 100%;
+height: 100vh;
+background-image: url(moon-images/stars.jpg);
+background-size: cover; /*Covers the entire area*/
+background-repeat: repeat;
+background-position: center;
+color: white;
+position: relative;
+z-index: 1;
+overflow: hidden;
+}
+
+.quote
+{
+    width: 60%;
+    position: relative;
+    top: 50%;
+    left: 10%;
+    z-index: 10;
+}
+
+h2
+{
+font-size: 40px;
+margin-bottom: 5%;
+ font-family: "Kalnia", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+"wdth" 100;
+
+}
+
+h3
+{
+    font-size: 15px;
+    font-family: "Inclusive Sans", system-ui;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: uppercase;
+  
+}
+
+a
+{
+    color: yellow;
+    text-decoration: none;
+}
+
+a:hover /*Gives text a feature when hovering. Can be used for any tag*/
+{
+    color: orange;
+    text-decoration: underline;
+}
+
+.redmoon
+{
+    background-image: url(moon-images/moon-red.png);
+    width: 600px;
+    height: 600px;
+    background-size: contain; /*Will be contained withhin its height and width*/
+    position: absolute;
+    right: -100px;
+    bottom: -50px;
+    z-index: 07;
+}
+.bluemoon
+{
+    background-image: url(moon-images/moon-blue.png);
+    width: 300px;
+    height: 300px;
+    background-size: contain; /*Will be contained withhin its height and width*/
+    position: absolute;
+    right: -80px;
+    top: -100px;
+    z-index: 5;
+}
+.bwmoon
+{
+    background-image: url(moon-images/moon-bw.png);
+    width: 600px;
+    height: 600px;
+    background-size: contain; /*Will be contained withhin its height and width*/
+    position: absolute;
+    left: -100px;
+    top: -50px;
+    z-index: 5;
+}
+/*list section*/
+.flex-area
+{
+display: flex;
+flex-direction: row;
+justify-content: center; /*for the videos*/
+}
+
+.flexitem
+{
+    width: 33.3%;
+    margin: 50px;
+
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+li
+{
+    font-size: 15px;
+    font-family: "Inclusive Sans", system-ui;
+  font-weight: 400;
+  font-style: italic;
+  border-bottom: 1px dotted gray;
+  padding: 10px 0 10px 0;
+  color: white;
+}
+span
+{
+color: plum;
+font-style: italic;
+display: block;
+font-size: 14px;
+}
+h4
+{
+    font-size: 40px;
+margin-bottom: 5%;
+ font-family: "Kalnia", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+"wdth" 100;
+margin-bottom: 30px;
+color: white;
+}
+
+#list-section
+{
+    background-image: url(moon-images/galaxy.jpg);
+    background-size: cover;
+    padding: 100px 200px;
+    background-position: bottom;
+}
+
+#videos
+{
+    background-color: black;
+    padding: 200px 0;
+}
+
+iframe 
+{
+    margin: 0 50px;
+}
+
+/*Header Styles*/
+
+header
+{
+text-align: center;
+
+position: fixed;
+top: 0;
+left: 0;
+z-index: 25;
+width: 100%;
+}
+
+h1
+{
+  font-family: "Kalnia", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+"wdth" 100;
+   color: white;
+font-size: 60px;
+font-weight: 500;
+}
+
+nav ul li
+{
+border: none;
+font-size: 14px;
+text-transform: uppercase;
+display: inline-block;
+
+}
+
+nav a
+{
+    background-color: yellow;
+    border: 1px solid gray;
+    color: black;
+    padding: 5px 10px;
+    margin: 0 10px;
+    
+}
+
+nav a:hover
+{
+    background-color: black;
+    color: yellow;
+    border: 1px solid yellow;
+    text-decoration: none;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    /* grid row start/ grid column start/ grid row end/ grid column end*/
+    .div1 { grid-area: 1 / 1 / 4 / 2; 
+    background-image: url(moon-images/phases-all.jpg);
+height: 600px; width: 600px;}
+    .div2 { grid-area: 1 / 2 / 2 / 3;
+        background-image: url(moon-images/phase1.jpg);height: 200px;}
+    .div3 { grid-area: 1 / 3 / 2 / 4; background-image: url(moon-images/phase2.jpg); height: 200px;}
+    .div4 { grid-area: 1 / 4 / 2 / 5; background-image: url(moon-images/phase3.jpg); height: 200px;}
+    .div5 { grid-area: 2 / 2 / 3 / 3; background-image: url(moon-images/phase4.jpg); height: 200px;}
+    .div6 { grid-area: 2 / 3 / 3 / 4;background-image: url(moon-images/phase5.jpg); height: 200px;}
+    .div7 { grid-area: 2 / 4 / 3 / 5; background-image: url(moon-images/phase6.jpg);height: 200px;}
+    .div8 { grid-area: 3 / 2 / 4 / 3; background-image: url(moon-images/phase7.jpg);height: 200px;}
+    .div9 { grid-area: 3 / 3 / 4 / 4; background-image: url(moon-images/phase8.jpg);height: 200px;}
+
+    .parent > div {
+        
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+color: plum;
+text-transform: uppercase;
+font-size: 14px;
+font-family: "Inclusive Sans", system-ui;
+font-weight: 400;
+font-style: italic;
+text-transform: uppercase;
+text-align: center;
+/*use the following three properties to center horizontally and vertically*/
+display: flex;
+align-items: center;
+justify-content: center;
+text-shadow: 1px 1px black;
+    }
+
+#phases-section
+{
+    background-color: black;
+    padding: 100px 100px;
+}
+
+#poem-section
+{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 100px, 0; 
+    background-image: url(moon-images/moon-blue.png);
+    background-position: top left;
+    position: relative;
+}
+
+#poem-section h2
+{
+font-size: 50px;
+font-weight: 300;
+margin: 0;
+}
+
+#poem-section h3
+{
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+#poem-section p
+{
+    font-size: 20px;
+    font-family: "Inclusive Sans", system-ui;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+.button 
+{
+    font-family: "Inclusive Sans", system-ui;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: black;
+    border: 1px solid grey;
+    padding: 20px;
+    margin: 50px 0 auto 0 auto;
+    display: block;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 5px 5px grey ;
+}
+
+.button:hover{
+    text-decoration: none;
+    background-color: gray;
+    color: white;
+    box-shadow: 1px 1px yellow;
+    transform: translate(2px 2px);
+}
+
+.played
+{
+    background-color: blue;
+    color: lightcoral;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 20px;
+    font-style: normal;
+    transition: all 10s;
+}
+
+.played:hover
+{
+    transform: translate(20px,0);
+    cursor: crosshair;
+    opacity: 0.5;
+    color: red;
+}
+
+.laughing
+{
+    background-color: pink;
+    color: greenyellow;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 20px;
+    font-style: normal;
+    transition: all 0.5s;
+}
+
+.laughing:hover
+{
+    transform: rotate(90deg);
+    cursor: crosshair;
+    opacity: 0.5;
+    
+}
+
+.hid
+{
+    background-color: lightskyblue;
+    color: burlywood;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 20px;
+    font-style: normal;
+    transition: all 3s;
+}
+
+.hid:hover
+{
+    transform: scale(0.5, 0.5);
+    cursor: crosshair;
+    opacity: 0;
+    color: red;
+}
+
+.tinymoon
+{
+    background-color:white;
+    color:black;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 20px;
+    font-style: normal;
+    
+}
+
+.tinymoon:hover
+{
+    color: white;
+    background-color: gray;
+}
+
+.resizered
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    display: none;
+}
+
+.tinymoon:hover ~ .resizered
+{
+    display: block;
+}
+
+#animated-section
+{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url(moon-images/stars.jpg);
+    background-size: cover;
+    animation-name: movestars;
+    animation-duration: 120s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes movestars
+{
+    0%
+    {
+background-position: 0 0;
+    }
+
+    100%
+    {
+background-position: 6000px 0;
+    }
+}
+.moon1
+{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: movemoon;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 5;
+
+}
+
+@keyframes movemoon
+{
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    50 % {
+        top: 500px;
+        left: 0;
+    }
+
+    100% {
+        top: 0;
+        left: 1000px;
+    }
+}
+
+.moon2
+{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    animation-name: rotatemoon;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 3;
+}
+
+@keyframes rotatemoon
+{
+    0% {
+        bottom: 50px;
+        right: 50px;
+        opacity: 0;
+        transform: rotate(0deg) scale(0,0);
+    }
+
+
+    100% {
+        bottom: 90%;
+        right: 90%;
+        opacity: 1;
+        transform: rotate(360deg) scale(2,2);
+    }
+}
+
+.moon3
+{
+    width: 600px;
+    height: 600px;
+    z-index: 1;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation-name: movemoon;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+
+}
+
+@media screen and (max-width:1200px) {
+    #list-section
+{
+    background-image: url(moon-images/galaxy.jpg);
+    background-size: cover;
+    padding: 100px 80px;
+    background-position: bottom;
+}
+
+.div1 { grid-area: 1 / 1 / 4 / 2; 
+    background-image: url(moon-images/phases-all.jpg);
+height: 600px; width: 400px}
+    
+}
+
+@media screen and (max-width: 700px) {
+    .flex-area
+{
+display: flex;
+flex-direction: column;
+justify-content: center; /*for the videos*/
+}
+
+.flexitem
+{
+    width: 90%;
+    margin: 50px;
+
+}
+
+iframe
+{
+    margin: 50px;
+}
+
+.parent {
+    display: block;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1
+{
+    width: 100%;
+}
+
+h2
+{
+    font-size: 6vw;
+}
+
+.quote
+{
+    width: 80%;
+}
+
+h1
+{
+    font-size: 12vw;
+    width: 100%;
+}
+
+nav ul li
+{
+    font-size: 10px;
+}
+
+.redmoon
+{
+    display: none;
+}
+
+a{
+    color: pink;
+}
+h3
+{
+
+}
+}
