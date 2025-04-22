@@ -415,4 +415,39 @@ p p {
   }
   
   
+@media (max-width: 1024px) {
+    .media-box.left-box {
+      position: relative;
+      left: auto;
+      margin: 2rem auto 2rem 0;
+    }
+  
+    .media-box.right-box {
+      position: relative;
+      right: auto;
+      margin: 2rem 0 2rem auto;
+    }
+  
+    .paper__wrapper {
+      padding: 32px 16px; /* reduce inner padding on small screens */
+    }
+  
+    .paper {
+      width: 95%;
+    }
+  
+    iframe {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .media-box {
+      width: 90vw;
+      max-width: 90vw;
+      position: relative;
+      left: auto !important;
+      right: auto !important;
+    }
+  }
+  
 
