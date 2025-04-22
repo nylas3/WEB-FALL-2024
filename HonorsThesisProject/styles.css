@@ -468,3 +468,10 @@ p p {
 .paper__content p {
   max-width: 100%;
 }
+
+.paper__content .project-title {
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
