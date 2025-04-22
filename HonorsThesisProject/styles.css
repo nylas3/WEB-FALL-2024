@@ -450,4 +450,8 @@ p p {
     }
   }
   
-
+@media (max-width: 1024px) {
+  .paper:after {
+    display: none;
+  }
+}
