@@ -415,7 +415,11 @@ p p {
   }
   
   
-@media (max-width: 1024px) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (max-width: 1024px) {
     .media-box.left-box {
       position: relative;
       left: auto;
@@ -450,8 +454,17 @@ p p {
     }
   }
   
-@media (max-width: 1024px) {
-  .paper:after {
-    display: none;
-  }
+  .paper__wrapper {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word; /* fallback for really long words/URLs */
+}
+
+.paper__content p {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.paper__content p {
+  max-width: 100%;
 }
